@@ -1,8 +1,17 @@
+/*header*/
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(185, 41%, 84%);
+    width: 1440px;
 }
 
+.header {
+    display: grid;
+    justify-items: center;
+    padding: 40px 0px;
+}
+
+/*Body*/
 
 
 
@@ -17,17 +26,11 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/*footer*/
+.rodape { 
+    font-size: 11px; text-align: center;
+ }
+.rodape a { 
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+ }
