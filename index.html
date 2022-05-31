@@ -19,37 +19,39 @@
     <main>
       <form action="" autocomplete="off">
         <div class="calculadora-principal">
-          <div class="area-conta">
-            <label class="titulo-campos" for="conta">Conta</label>
-            <img src="./images/icon-dollar.svg" width="11" height="17" alt="Símbolo do dinhero" />
-            <input type="number" name="conta" id="conta" required />
-          </div>
-          <fieldset class="area-gorjeta">
-            <legend class="titulo-campos">Selecione a Gorjeta %</legend>
-            <div class="opcoes-de-calculo">
-              <input  type="radio" name="porcentagem" value="5porcento" id="5porcento" checked />
-              <label for="5porcento">5%</label>
-              <input type="radio" name="porcentagem" value="10porcento" id="10porcento" />
-              <label for="10porcento">10%</label>
-              <input type="radio" name="porcentagem" value="15porcento" id="15porcento" />
-              <label for="15porcento">15%</label>
-              <input type="radio" name="porcentagem" value="25porcento" id="25porcento" />
-              <label for="25porcento">25%</label>
-              <input type="radio" name="porcentagem" value="50porcento" id="50porcento" />
-              <label for="50porcento">50%</label>
-              <div class="personalizado">
-                <label for="personalizado"></label>
-                <input type="number" name="personalizado" id="personalizado" placeholder="Personalizado" />
-              </div>
+          <div class="calculadora-esquerda">
+            <div class="area-conta">
+              <label class="titulo-campos" for="conta">Conta</label>
+              <img src="./images/icon-dollar.svg" width="11" height="17" alt="Símbolo do dinhero" />
+              <input type="number" name="conta" id="conta" required />
             </div>
-          </fieldset>
-          <div class="area-pessoas">
-            <label class="titulo-campos" for="pessoas">Número de pessoas</label>
-            <img src="./images/icon-person.svg" width="13" height="16" alt="Imagem que representa uma pessoa" />
-            <input type="number" name="pessoas" id="pessoas" min="0" step="1" required />
+            <fieldset class="area-gorjeta">
+              <legend class="titulo-campos">Selecione a Gorjeta %</legend>
+              <div class="opcoes-de-calculo">
+                <input  type="radio" name="porcentagem" value="5porcento" id="5porcento" checked />
+                <label for="5porcento">5%</label>
+                <input type="radio" name="porcentagem" value="10porcento" id="10porcento" />
+                <label for="10porcento">10%</label>
+                <input type="radio" name="porcentagem" value="15porcento" id="15porcento" />
+                <label for="15porcento">15%</label>
+                <input type="radio" name="porcentagem" value="25porcento" id="25porcento" />
+                <label for="25porcento">25%</label>
+                <input type="radio" name="porcentagem" value="50porcento" id="50porcento" />
+                <label for="50porcento">50%</label>
+                <div class="personalizado">
+                  <label for="personalizado"></label>
+                  <input type="number" name="personalizado" id="personalizado" placeholder="Personalizado" />
+                </div>
+              </div>
+            </fieldset>
+            <div class="area-pessoas">
+              <label class="titulo-campos" for="pessoas">Número de pessoas</label>
+              <img src="./images/icon-person.svg" width="13" height="16" alt="Imagem que representa uma pessoa" />
+              <input type="number" name="pessoas" id="pessoas" min="0" step="1" required />
+            </div>
           </div>
-          <div class="resultado">
-            <div class="resultado-por-pessoa"></div>
+          <div class="calculadora-direita">
+            <div class="resultado-por-pessoa">
               <h2 class="cores-principal-resultado">Total da gorjeta</h2>
               <p class="cores-secundario-resultado">/ pessoa</p>
               <p class="numero-resultado">R$0,00</p>
@@ -64,8 +66,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
     </main>
 
     <footer class="rodape">
