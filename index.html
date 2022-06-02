@@ -16,9 +16,10 @@
         <img class="logo" src="./images/logo.svg" alt="Logo Splitter">
       </div>
     </header>
+
     <main>
-      <form class="calculadora" action="" autocomplete="off">
-        <div class="calculadora-principal">
+      
+        <section class="calculadora-principal">
           <div class="calculadora-esquerda">
             <div class="area-conta">
               <label class="titulo-campos" for="conta">Conta</label>
@@ -28,29 +29,26 @@
             <fieldset class="area-gorjeta">
               <legend class="titulo-campos">Selecione a Gorjeta %</legend>
               <div class="opcoes-de-calculo">
-                <input  type="radio" name="porcentagem" value="5porcento" id="5porcento" checked />
-                <label for="5porcento">5%</label>
-                <input type="radio" name="porcentagem" value="10porcento" id="10porcento" />
-                <label for="10porcento">10%</label>
-                <input type="radio" name="porcentagem" value="15porcento" id="15porcento" />
-                <label for="15porcento">15%</label>
-                <input type="radio" name="porcentagem" value="25porcento" id="25porcento" />
-                <label for="25porcento">25%</label>
-                <input type="radio" name="porcentagem" value="50porcento" id="50porcento" />
-                <label for="50porcento">50%</label>
-                <div class="personalizado">
-                  <label class="personalizado" for="personalizado"></label>
-                  <input type="number" name="personalizado" id="personalizado" placeholder="Personalizado" />
-                </div>
+                <button class="porcentagem">5%</button>
+                <button class="porcentagem">10%</button>
+                <button class="porcentagem">15%</button>
+                <button class="porcentagem">25%</button>
+                <button class="porcentagem">50%</button>
+                <input type="number" name="personalizado" id="personalizado" classe= "porcentagem personalizado" placeholder="Personalizado" />
               </div>
-            </fieldset>
-            <div class="area-pessoas">
-              <label class="titulo-campos" for="pessoas">Número de pessoas</label>
-              <img src="./images/icon-person.svg" width="13" height="16" alt="Imagem que representa uma pessoa" />
-              <input type="number" name="pessoas" id="pessoas" min="0" step="1" required />
+            </fieldset>  
+              
+              <div class="area-pessoas">
+                <label class="titulo-campos" for="pessoas">Número de pessoas </label>
+                
+                <input type="number" classe="pessoas"
+                id="pessoas">
+              </div>
             </div>
-          </div>
-          <div class="calculadora-direita">
+            </fieldset>
+        </section> 
+
+          <section class="calculadora-direita">
             <div class="resultado-por-pessoa">
               <h2 class="cores-principal-resultado">Total da gorjeta</h2>
               <p class="cores-secundario-resultado">/ pessoa</p>
@@ -64,9 +62,10 @@
             <div class="botao-reset">
               <button type="button" class="botao-reset" disabled>Reiniciar</button>
             </div>
-          </div>
-        </div>
-      </form>
+          </section>
+
+        </section>
+      
     </main>
 
     <footer class="rodape">

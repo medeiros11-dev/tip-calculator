@@ -2,31 +2,62 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(185, 41%, 84%);
-    width: 1440px;
+    max-width: 1440px;
+    box-sizing: border-box;
 }
 
 .header {
     display: grid;
     justify-items: center;
-    padding: 40px 0px;
+    margin-bottom: 2rem;
+    
 }
 
 /*Body*/
-.calculadora {
-    margin: 0% 22% 0% 22%;
-}
+
 
 .calculadora-principal {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 20px 20px;
-    display: grid;
-    gap: 30px;
-    padding: 50px;
+    
+  
+    
+}
+
+main{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+    width:50%;
+    height: 362px;
+    
 }
 
 
 
+.area-conta input{
+    
+}
 
+.calculadora-direita{
+    background:orange;
+    width:50%; 
+}
+
+.button{
+
+
+}
+
+.opcoes-de-calculo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+button, .opcoes-de-calculo input{
+    max-width:50px ;
+    margin: 5px;
+}
 
 /*footer*/
 .rodape { 
@@ -36,3 +67,14 @@ body {
     color: hsl(228, 45%, 44%);
     font-weight: bold;
  }
+
+ .area-pessoas input{
+    background-image: url('images/icon-person.svg');
+    
+    background-repeat:no-repeat;
+    background-position: cover;
+
+ 
+
+}
+
