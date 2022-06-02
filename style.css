@@ -1,6 +1,6 @@
 /*Header*/
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
     max-width: 1440px;
     box-sizing: border-box;
@@ -14,34 +14,30 @@ body {
 }
 
 /*Body*/
-
-
-.calculadora-principal {
+.calculadora-principal{
     background-color: hsl(0, 0%, 100%);
-    
-  
-    
-}
-
-main{
+    border-radius: 10px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    
     width:50%;
-    height: 362px;
-    
+    height: 500px;
 }
 
-
-
+.calculadora-esquerda, .calculadora-direita {
+    margin: 5%;
+}
 .area-conta input{
     
+    background-image: url('images/icon-dollar.svg'); 
+    background-repeat:no-repeat;
+    background-position: cover;
 }
 
-.calculadora-direita{
-    background:orange;
-    width:50%; 
+.titulo-campos {
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .button{
@@ -59,6 +55,36 @@ button, .opcoes-de-calculo input{
     margin: 5px;
 }
 
+.area-pessoas input{
+    background-image: url('images/icon-person.svg');
+    background-repeat:no-repeat;
+    background-position: cover;
+}
+
+
+.calculadora-direita{
+    background: hsl(183, 100%, 15%);
+    width:50%;
+    border-radius: 10px;
+    margin: 3%;
+}
+
+.principal-resultado {
+    color: hsl(0, 0%, 100%);
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.secundario-resultado {
+    color: hsl(189, 41%, 97%);
+    padding-left: 30px;
+}
+
+.numero-resultado {
+    color: hsl(172, 67%, 45%);
+    font-size: 2.5rem;
+}
+
 /*footer*/
 .rodape { 
     font-size: 11px; text-align: center;
@@ -67,14 +93,4 @@ button, .opcoes-de-calculo input{
     color: hsl(228, 45%, 44%);
     font-weight: bold;
  }
-
- .area-pessoas input{
-    background-image: url('images/icon-person.svg');
-    
-    background-repeat:no-repeat;
-    background-position: cover;
-
- 
-
-}
 

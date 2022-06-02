@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Tip calculator app</title>
 
   </head>
@@ -18,45 +18,40 @@
     </header>
 
     <main>
-      
-        <section class="calculadora-principal">
-          <div class="calculadora-esquerda">
+      <section class="calculadora-principal">
+          <section class="calculadora-esquerda">
             <div class="area-conta">
               <label class="titulo-campos" for="conta">Conta</label>
-              <img src="./images/icon-dollar.svg" width="11" height="17" alt="Símbolo do dinhero" />
               <input type="number" name="conta" id="conta" required />
             </div>
             <fieldset class="area-gorjeta">
               <legend class="titulo-campos">Selecione a Gorjeta %</legend>
               <div class="opcoes-de-calculo">
-                <button class="porcentagem">5%</button>
+                <button class="porcentagem">5% </button>
                 <button class="porcentagem">10%</button>
                 <button class="porcentagem">15%</button>
                 <button class="porcentagem">25%</button>
                 <button class="porcentagem">50%</button>
-                <input type="number" name="personalizado" id="personalizado" classe= "porcentagem personalizado" placeholder="Personalizado" />
+                <input type="number" name="personalizado" id="personalizado" class= "porcentagem-personalizado" placeholder="Personalizado" />
               </div>
             </fieldset>  
               
               <div class="area-pessoas">
-                <label class="titulo-campos" for="pessoas">Número de pessoas </label>
-                
-                <input type="number" classe="pessoas"
-                id="pessoas">
+                <label class="titulo-campos" for="pessoas">Número de pessoas </label>               
+                <input type="number" classe="pessoas" id="pessoas" required>
               </div>
-            </div>
-            </fieldset>
-        </section> 
+          </section>
+            </fieldset> 
 
           <section class="calculadora-direita">
             <div class="resultado-por-pessoa">
-              <h2 class="cores-principal-resultado">Total da gorjeta</h2>
-              <p class="cores-secundario-resultado">/ pessoa</p>
+              <h2 class="principal-resultado">Total da gorjeta</h2>
+              <p class="secundario-resultado">/ pessoa</p>
               <p class="numero-resultado">R$0,00</p>
             </div>
             <div class="resultado-total">
-              <h2 class="cores-principal-resultado">Total da conta</h2>
-              <p class="cores-secundario-resultado">/ pessoa</p>
+              <h2 class="principal-resultado">Total da conta</h2>
+              <p class="secundario-resultado">/ pessoa</p>
               <p class="numero-resultado">R$0,00</p>
             </div>
             <div class="botao-reset">
@@ -64,7 +59,7 @@
             </div>
           </section>
 
-        </section>
+      </section>
       
     </main>
 
