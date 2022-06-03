@@ -2,7 +2,7 @@
 body {
     font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
-    max-width: 1440px;
+    max-width: 1920px;
     box-sizing: border-box;
 }
 
@@ -10,6 +10,7 @@ body {
     display: grid;
     justify-items: center;
     margin-bottom: 2rem;
+    margin-top: 2.5rem;
     
 }
 
@@ -20,7 +21,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    width:50%;
+    width:65%;
     height: 500px;
 }
 
@@ -38,11 +39,6 @@ body {
     color: hsl(186, 14%, 43%);
     font-weight: bold;
     font-size: 1.1rem;
-}
-
-.button{
-
-
 }
 
 .opcoes-de-calculo{
@@ -76,7 +72,7 @@ button, .opcoes-de-calculo input{
 }
 
 .secundario-resultado {
-    color: hsl(189, 41%, 97%);
+    color: hsl(185, 41%, 84%);
     padding-left: 30px;
 }
 
@@ -88,9 +84,9 @@ button, .opcoes-de-calculo input{
 /*footer*/
 .rodape { 
     font-size: 11px; text-align: center;
+    padding: 40px 0 40px 0;
  }
 .rodape a { 
     color: hsl(228, 45%, 44%);
     font-weight: bold;
  }
-
