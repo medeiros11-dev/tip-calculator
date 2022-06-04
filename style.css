@@ -76,16 +76,16 @@ button, .opcoes-de-calculo input{
     border-radius: 20px;
     margin: 3%;
     padding: 25px;
-}
-
-.area-resultado {
     
 }
 
-.principal-resultado {
-    color: hsl(0, 0%, 100%);
-    padding-top: 50px;
-    padding-left: 30px;
+.area-resultado{
+    display:flex;
+    
+}
+
+.resultados {
+    height: 350px;
 }
 
 .secundario-resultado {
@@ -99,14 +99,14 @@ button, .opcoes-de-calculo input{
 }
 
 .botao-reset {
-    background-color: orange;
+    background-color: red;
     width: 100%;
-    text-transform: uppercase;
     font-size: 1.1rem;
     border: none;
     letter-spacing: normal;
     border-radius: 4px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /*footer*/
