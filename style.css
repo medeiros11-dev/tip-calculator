@@ -30,7 +30,8 @@ body {
     width: 50%;
     margin: 3%;
     padding: 25px;
-    border-radius: 20px
+    border-radius: 20px;
+    
 }
 .area-conta input{
     background-image: url('images/icon-dollar.svg'); 
@@ -41,12 +42,18 @@ body {
     height: 55px;
     width: 100%;
     justify-items: center;
+    gap: 40px;
+}
+
+.area-gorjeta {
+    margin-bottom: 30px;
 }
 
 .titulo-campos {
     color: hsl(186, 14%, 43%);
     font-weight: bold;
     font-size: 1.1rem;
+    margin-bottom: 50px;
 }
 
 .opcoes-de-calculo{
@@ -85,7 +92,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .area-resultado{
     display:flex;
-    
+    font-size: 0.9rem;
+    margin-bottom: 10%;
 }
 
 .resultados {
@@ -100,10 +108,11 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 .numero-resultado {
     color: hsl(172, 67%, 45%);
     font-size: 2.5rem;
+    margin-left: auto;
 }
 
 .botao-reset {
-    background-color: red;
+    background-color: rgba(84, 221, 226, 0.219);
     width: 100%;
     font-size: 1.1rem;
     border: none;
