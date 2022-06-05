@@ -59,6 +59,10 @@ button, .opcoes-de-calculo input{
     margin: 5px;
 }
 
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .area-pessoas input{
     background-image: url('images/icon-person.svg');
     background-repeat:no-repeat;
