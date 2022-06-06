@@ -15,3 +15,4 @@ span2.style.color = "red";
 
 let radioValue = 0;
 let divider = 0;
+
