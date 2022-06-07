@@ -1,48 +1,48 @@
 //Variáveis
-let pValor = 0;
-let nPessoas = 0;
-let valor = 0;
+let gorjetaPorPessoa = ''
+let nPessoas = ''
+let valor = ''
 
 //Chamada de valores
-onchange = () => {
-    valor=parseInt(document.getElementById('conta').value, 10);
 
-    nPessoas=parseInt(document.getElementById('pessoas').value, 10);
-    
-    document.getElementById('result').value = valor1 + valor2;
+onchange = () => {
+  valor = parseInt(document.getElementById('conta').value, 10)
+  nPessoas = parseInt(document.getElementById('pessoas').value, 10)
+
+  console.log(valor)
+  console.log(nPessoas)
 }
+
+console.log(valor)
+console.log(nPessoas)
 
 //Valor botões de porcentagem
 onload = () => {
-    document.querySelector('#opcao5').onclick = () => porcentagem(5);
-    document.querySelector('#opcao10').onclick = () => porcentagem(10);
-    document.querySelector('#opcao15').onclick = () => porcentagem(15);
-    document.querySelector('#opcao25').onclick = () => porcentagem(25);
-    document.querySelector('#opcao50').onclick = () => porcentagem(50);
+  document.querySelector('#opcao5').onclick = () => gorjeta(5)
+  document.querySelector('#opcao10').onclick = () => gorjeta(10)
+  document.querySelector('#opcao15').onclick = () => gorjeta(15)
+  document.querySelector('#opcao25').onclick = () => gorjeta(25)
+  document.querySelector('#opcao50').onclick = () => gorjeta(50)
 }
-
 
 const atualizarDisplay = () => {
-    
+  document.getElementById('gorjeta-pessoa').innerHTML = gorjetaPorPessoa
+  document.getElementById('conta-pessoa').innerHTML = contaPorPessoa
 }
 
-const porcentagem = (n) => {
-    pValor = n;
-    atualizaGorjeta ();
+const gorjeta = n => {
+  let gorjeta = valor * (n / 100)
+  let total = valor + gorjeta
+
+  gorjetaPorPessoa = gorjeta / nPessoas
+  contaPorPessoa = total / nPessoas
+
+  atualizarDisplay()
+  return gorjetaPorPessoa, contaPorPessoa
 }
-
-const calculo = (valor, pValor, nPessoas) => {
-    
-}
-
-
-
-
 
 //Botão reset
-const limpa = () => {
-
-}
+const limpa = () => {}
 
 /*
 const entradaConta= document.querySelector("#conta");
