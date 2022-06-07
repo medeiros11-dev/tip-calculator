@@ -1,4 +1,16 @@
+//Variáveis
+let pValor = 0;
+let nPessoas = 0;
+let valor = 0;
 
+//Chamada de valores
+onchange = () => {
+    valor=parseInt(document.getElementById('conta').value, 10);
+
+    nPessoas=parseInt(document.getElementById('pessoas').value, 10);
+    
+    document.getElementById('result').value = valor1 + valor2;
+}
 
 //Valor botões de porcentagem
 onload = () => {
@@ -9,14 +21,19 @@ onload = () => {
     document.querySelector('#opcao50').onclick = () => porcentagem(50);
 }
 
-//Atualiza valor da gorjeta
-let gValor = 'R$ 0,00'
 
-const atualizaGorjeta = () => {
-    document.querySelector('.numero-resultado-gorjeta').innertText = 
+const atualizarDisplay = () => {
+    
 }
 
+const porcentagem = (n) => {
+    pValor = n;
+    atualizaGorjeta ();
+}
 
+const calculo = (valor, pValor, nPessoas) => {
+    
+}
 
 
 
