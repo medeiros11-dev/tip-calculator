@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Tip calculator app</title>
 
   </head>
@@ -22,22 +24,28 @@
           <section class="calculadora-esquerda">
             <div class="area-conta">
               <label class="titulo-campos" for="conta">Conta</label>
-              <input type="number" name="conta" id="conta" required />
+              <div class="input-box">
+                <img src="images/icon-dollar.svg">
+                <input type="number" name="conta" id="conta" required />
+              </div>
             </div>
             <fieldset class="area-gorjeta">
               <legend class="titulo-campos">Selecione a Gorjeta %</legend>
               <div class="opcoes-de-calculo">
-                <button class="porcentagem" name="opcao" value="opcao5" id="opcao5">5% </button>
-                <button class="porcentagem" name="opcao" value="opcao10" id="opcao10">10%</button>
-                <button class="porcentagem" name="opcao" value="opcao15" id="opcao15">15%</button>
-                <button class="porcentagem" name="opcao" value="opcao25" id="opcao25">25%</button>
-                <button class="porcentagem" name="opcao" value="opcao50" id="opcao50">50%</button>
+                <input type="button" name="opcao" value="5%" id="opcao5">
+                <input type="button" name="opcao" value="10" id="opcao10">
+                <input type="button" name="opcao" value="15" id="opcao15">
+                <input type="button" name="opcao" value="25" id="opcao25">
+                <input type="button" name="opcao" value="50" id="opcao50">
                 <input type="number" name="personalizado" id="personalizado" class= "porcentagem-personalizado" placeholder="Personalizado" />
               </div>
             </fieldset>
-              <div class="area-pessoas">
-                <label class="titulo-campos" for="pessoas">Número de pessoas </label>               
-                <input type="number" classe="pessoas" id="pessoas" required>
+              <div class="area-conta">
+                <label class="titulo-campos" for="pessoas">Número de pessoas </label>
+                <div class="input-box">
+                  <img src="images/icon-person.svg">               
+                  <input type="number" classe="pessoas" id="pessoas" required>
+                </div>
               </div>
           </section>
           <section class="calculadora-direita">
@@ -58,7 +66,7 @@
               </div>
             </div>
             <div class="botao-reset">
-              <button type="button" class="botao-reset" disabled>Reiniciar</button>
+              <button type="button" disabled>Reiniciar</button>
             </div>
           </section>
       </section>

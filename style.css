@@ -1,6 +1,7 @@
 /*Header*/
 body {
     font-family: 'Space Mono', monospace;
+    font-weight: bold;
     background-color: hsl(185, 41%, 84%);
     max-width: 1920px;
     box-sizing: border-box;
@@ -33,51 +34,81 @@ body {
     border-radius: 20px;
     
 }
-.area-conta input{
-    background-image: url('images/icon-dollar.svg'); 
-    background-repeat:no-repeat;
-    background-position: cover;
-    text-align: end;
-    border: none;
-    height: 55px;
-    width: 100%;
-    justify-items: center;
+
+.area-conta {
     gap: 40px;
 }
 
-.area-gorjeta {
-    margin-bottom: 30px;
+.input-box {
+    display: flex;
+    gap: 10px;
+    background-color: hsl(189, 41%, 97%);
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.input-box img {
+    height: 25px;
+    width: 25px;
+}
+
+.area-conta .input-box input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    width: 100%;
+    background: transparent;
+    height: 100%;
 }
 
 .titulo-campos {
     color: hsl(186, 14%, 43%);
     font-weight: bold;
     font-size: 1.1rem;
-    margin-bottom: 50px;
+    
+}
+
+.area-gorjeta {
+    margin: 35px 0;
 }
 
 .opcoes-de-calculo{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 10px;
+    gap: 15px;
 }
 
-button, .opcoes-de-calculo input{
-    max-width:50px ;
-    margin: 5px;
+.opcoes-de-calculo input {
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
 }
+
+
+.porcentagem-personalizado::placeholder {
+    text-align: center;
+}
+
+.opcoes-de-calculo input:focus {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
 
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}
-
-.area-pessoas input{
-    background-image: url('images/icon-person.svg');
-    background-repeat:no-repeat;
-    background-position: cover;
-    text-align: end;
-    border: none;
-    height: 55px;
-    width: 100%;
 }
 
 
@@ -124,7 +155,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     margin-left: auto;
 }
 
-.botao-reset {
+.botao-reset button {
     background-color: rgba(84, 221, 226, 0.219);
     width: 100%;
     font-size: 1.1rem;
@@ -133,6 +164,14 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     border-radius: 4px;
     text-align: center;
     text-transform: uppercase;
+    padding: 5px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+
+.botao-reset button:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
 }
 
 /*footer*/
