@@ -26,17 +26,17 @@
               <label class="titulo-campos" for="conta">Conta</label>
               <div class="input-box">
                 <img src="images/icon-dollar.svg">
-                <input type="number" name="conta" id="conta" onchange='teste()' required />
+                <input type="number" name="conta" id="conta" required />
               </div>
             </div>
             <fieldset class="area-gorjeta">
               <legend class="titulo-campos">Selecione a Gorjeta %</legend>
               <div class="opcoes-de-calculo">
-                <input type="button" name="opcao" value="5" id="opcao5">
-                <input type="button" name="opcao" value="10" id="opcao10">
-                <input type="button" name="opcao" value="15" id="opcao15">
-                <input type="button" name="opcao" value="25" id="opcao25">
-                <input type="button" name="opcao" value="50" id="opcao50">
+                <button name="opcao" value="5" id="opcao5">5%</button>
+                <button name="opcao" value="10" id="opcao10">10%</button>
+                <button name="opcao" value="15" id="opcao15">15%</button>
+                <button name="opcao" value="25" id="opcao25">25%</button>
+                <button name="opcao" value="50" id="opcao50">50%</button>
                 <input type="number" name="personalizado" id="personalizado" class= "porcentagem-personalizado" placeholder="Personalizado" />
               </div>
             </fieldset>
@@ -55,14 +55,14 @@
                   <h2>Total de Gorgetas</h2>              
                   <p>/pessoa</p> 
                 </span>           
-                <div class="numero-resultado-gorjeta">R$0,00</div>
+                <div class="numero-resultado-gorjeta" id="gorjeta-pessoa">R$ 0,00</div>
               </div>  
               <div class="area-resultado">
                 <span>
                   <h2>Total da conta</h2>              
                   <p>/pessoa</p> 
                 </span>           
-                <div class="numero-resultado">R$0,00</div>
+                <div class="numero-resultado" id="conta-pessoa">R$ 0,00</div>
               </div>
             </div>
             <div class="botao-reset">

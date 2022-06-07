@@ -84,7 +84,7 @@ body {
     gap: 15px;
 }
 
-.opcoes-de-calculo input {
+.opcoes-de-calculo button, .opcoes-de-calculo input {
     padding: 15px 0;
     width: 100%;
     border: none;
@@ -96,9 +96,13 @@ body {
     font-size: 14px;
 }
 
+.porcentagem-personalizado {
+    text-align: center;
+}
 
 .porcentagem-personalizado::placeholder {
     text-align: center;
+    color: hsl(0, 0%, 100%);
 }
 
 .opcoes-de-calculo input:focus {
