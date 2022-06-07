@@ -1,5 +1,4 @@
 const entradaConta= document.querySelector("#conta");
-console.log(entradaConta)
 const entradaPessoas = document.querySelector('input[name="pessoas"]');
 const totalGorjeta = document.querySelector(".numero-resultado-gorjeta");
 const totalConta = document.querySelector(".numero-resultado");
