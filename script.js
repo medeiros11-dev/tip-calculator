@@ -4,24 +4,25 @@ let nPessoas = '';
 let valor = '';
 let porcentagemPersonalizada = undefined;
 let valorGorjeta = '';
+let contaPorPessoa = '';
 
 //Chamada de valores
 
 onchange = () => {
-  valor = parseInt(document.getElementById('conta').value, 10);
-  nPessoas = parseInt(document.getElementById('pessoas').value, 10);
-  porcentagemPersonalizada = parseInt(document.getElementById('personalizado').value, 10);
+  valor = parseFloat(document.getElementById('conta').value).toFixed(2);
+  nPessoas = parseInt(document.getElementById('pessoas').value);
+  porcentagemPersonalizada = parseFloat(document.getElementById('personalizado').value).toFixed(2);
   
 }
 
-
 //Valor botões de porcentagem
 onload = () => {
-  document.querySelector('#opcao5').onclick = () => gorjeta(5);
-  document.querySelector('#opcao10').onclick = () => gorjeta(10);
-  document.querySelector('#opcao15').onclick = () => gorjeta(15);
-  document.querySelector('#opcao25').onclick = () => gorjeta(25);
-  document.querySelector('#opcao50').onclick = () => gorjeta(50);
+  document.querySelector('#opcao5').onclick = () => calculaGorjeta(5);
+  document.querySelector('#opcao10').onclick = () => calculaGorjeta(10);
+  document.querySelector('#opcao15').onclick = () => calculaGorjeta(15);
+  document.querySelector('#opcao25').onclick = () => calculaGorjeta(25);
+  document.querySelector('#opcao50').onclick = () => calculaGorjeta(50);
+  
 }
 
 const atualizarDisplay = () => {
@@ -29,15 +30,15 @@ const atualizarDisplay = () => {
   document.getElementById('conta-pessoa').innerHTML = contaPorPessoa;
 }
 
-const gorjeta = n => {
-  valorgorjeta = valor * (n / 100);
-  total = valor + valorgorjeta;
+const calculaGorjeta = n => {
+  valorGorjeta = valor * (n / 100);
+  total = parseFloat(valor) + parseFloat(valorGorjeta);
 
-  gorjetaPorPessoa = 'R$ ' + valorgorjeta / nPessoas;
-  contaPorPessoa =  'R$ ' +  total / nPessoas;
+  gorjetaPorPessoa = 'R$ ' + parseFloat(valorGorjeta / nPessoas).toFixed(2);
+  contaPorPessoa =  'R$ ' +  parseFloat(total / nPessoas).toFixed(2);
 
   atualizarDisplay()
-  return gorjetaPorPessoa, contaPorPessoa;
+
 }
 
 //Botão reset
