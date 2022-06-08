@@ -12,7 +12,6 @@ onchange = () => {
   valor = parseFloat(document.getElementById('conta').value).toFixed(2);
   nPessoas = parseInt(document.getElementById('pessoas').value);
   porcentagemPersonalizada = parseFloat(document.getElementById('personalizado').value).toFixed(2);
-  
 }
 
 //Valor botões de porcentagem
@@ -42,4 +41,12 @@ const calculaGorjeta = n => {
 }
 
 //Botão reset
-const limpa = () => {}
+const btn = document.querySelector("#resetb")
+btn.addEventListener("click", limpa);
+
+const limpa = () => {
+  gorjetaPorPessoa = document.querySelector('#gorjeta-pessoa').value = '';
+  contaPorPessoa = document.querySelector('#conta-pessoa').value = '';
+  
+}
+
